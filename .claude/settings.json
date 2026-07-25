@@ -1,0 +1,32 @@
+{
+  "//": "Place this at .claude/settings.json in the lineguard-web repo. It enables the frontend-design skill for that repo and mirrors the production guardrails we use on the portfolio (push-to-main / force-push / merge all require confirmation).",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "PowerShell",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "ask": [
+      "Bash(git push origin main*)",
+      "Bash(git push * main*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git merge*)",
+      "Bash(gh pr merge*)",
+      "PowerShell(git push origin main*)",
+      "PowerShell(git push * main*)",
+      "PowerShell(git push --force*)",
+      "PowerShell(git merge*)",
+      "PowerShell(gh pr merge*)"
+    ]
+  }
+}
