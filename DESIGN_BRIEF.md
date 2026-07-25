@@ -1,0 +1,87 @@
+# DESIGN_BRIEF.md — LineGuard website
+
+The spec the site is built to. Sections marked **[HUMAN]** are creative direction
+the human fills in; until then the agent builds against this structure with
+clearly-marked placeholders. This file is meant to evolve.
+
+## 1. Product context [HUMAN]
+
+- **What LineGuard is:** _(one-liner + 2–3 sentences — a computer-vision product
+  for …)_
+- **Who it's for:** _(target user / buyer)_
+- **Core promise / differentiator:** _(why it's worth caring about)_
+- **Key features / capabilities (3–6):** _(bullets)_
+- **Tone:** _(pick ~3 adjectives, e.g. precise · confident · cutting-edge ·
+  trustworthy)_
+- **Primary call to action:** _(e.g. "Request early access" · "Book a demo" ·
+  "Get in touch")_
+
+## 2. Aesthetic north star
+
+An Apple product page. Concretely:
+
+- **Cinematic, full-bleed hero** — a high-quality looping video or a striking image
+  behind large, confident headline type, with a slow, smooth entrance (presence,
+  not a splash gimmick).
+- **High-quality media backgrounds** — muted autoplay/looped video (with a poster
+  frame + reduced-motion fallback) and optimized imagery carry the story more than
+  decorative UI chrome.
+- **Scroll-driven storytelling** — sections reveal, pin, and scrub as you scroll
+  (GSAP ScrollTrigger). Depth and the "premium 3D feel" come from motion, parallax,
+  and quality media — **not** from WebGL, unless one specific moment truly earns it.
+- **Generous whitespace, restrained palette, big type** — minimal and spacious, one
+  accent color, a strong type scale. Let the product breathe.
+- **Buttery smooth scroll** (Lenis) tying the whole thing together.
+
+## 3. Reference sites
+
+See `REFERENCES.md` for the running list with "what to steal" notes.
+
+- **Zentry** (https://zentry.com; open-source rebuild:
+  `adrianhajdin/award-winning-website`, React + GSAP + Tailwind) — confirmed
+  primary technical reference. Borrow its clip-path video reveals, scroll
+  choreography, bento grid, and animated title reveals — applied with Apple-clean
+  restraint, **not** its maximalist gaming tone.
+- **Apple product pages** — baseline for restraint, pacing, and typography.
+- **[HUMAN]** add the other examples you had in mind.
+
+## 4. Section structure (starting skeleton — refine together)
+
+1. **Nav** — minimal; transparent over the hero, solidifies on scroll; logo + a
+   couple of links + CTA.
+2. **Hero** — cinematic media background + headline + subhead + primary CTA.
+3. **Problem / story** — why LineGuard matters (scroll-revealed).
+4. **How it works** — 2–4 pinned/scrubbed steps with visuals.
+5. **Features** — modern cards or alternating media/text rows.
+6. **Showcase / visuals** — the product in action (video/images; no live demo).
+7. **Credibility** _(optional)_ — logos, stats, quotes.
+8. **CTA + contact** — the ask + a Formspree contact form.
+9. **Footer** — links, legal, contact.
+
+## 5. Animation & motion principles
+
+- GSAP ScrollTrigger for scroll choreography (pin, scrub, staggered reveals);
+  Framer Motion for component entrance/hover transitions; Lenis for smooth scroll.
+- Everything respects `prefers-reduced-motion` → clean static fallback; content is
+  never gated behind animation.
+- No jank: animate transform/opacity only, avoid layout thrash, keep the main
+  thread free during scroll.
+
+## 6. Performance & quality bar
+
+- Fast despite the media: compress video (MP4 H.264/H.265 + WebM), lazy-load below
+  the fold, `next/image` for images, poster frames, preload only the hero asset.
+- Targets: strong Lighthouse scores, low CLS, LCP within budget on mid-range mobile.
+- Responsive from small mobile upward.
+- Accessibility: semantic landmarks, visible focus states, alt text, captions where
+  relevant.
+
+## 7. Contact module
+
+- Formspree (client-side, no backend). Form ID from `NEXT_PUBLIC_FORMSPREE_ID`.
+  Success/error states, light client validation, and a honeypot for spam.
+
+## 8. Out of scope
+
+No live product demo, no API/model calls, no backend, and no reference to the
+private LineGuard product repo.
