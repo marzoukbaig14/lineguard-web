@@ -15,9 +15,9 @@ export function Showcase() {
     >
       <ScrollReveal className="page-shell">
         <SectionHeader
-          eyebrow="Showcase · PLACEHOLDER"
-          title="See it watching a line."
-          lede="PLACEHOLDER — a caption for the footage: what the viewer is looking at and what to notice."
+          eyebrow="See it call"
+          title="Watch a close one get settled."
+          lede="DRAFT — caption for the footage: a real rally, the ball at the line, and the call landing in real time from the corner view."
         />
       </ScrollReveal>
 
@@ -25,7 +25,7 @@ export function Showcase() {
         <FadeIn>
           <MediaPlaceholder
             scan
-            label="PLACEHOLDER — showcase video (muted · looped)"
+            label="PLACEHOLDER — corner-POV rally + live call (muted · looped)"
             className="aspect-video w-full rounded-2xl border border-hairline"
           />
         </FadeIn>

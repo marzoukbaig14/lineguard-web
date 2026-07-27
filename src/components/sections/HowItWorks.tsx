@@ -7,25 +7,25 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 const steps = [
   {
     n: "01",
-    title: "Capture",
-    body: "PLACEHOLDER — how the line is observed: cameras, feeds, framerate.",
+    title: "Mount",
+    body: "DRAFT — two small cameras clip low into the back corner of a standard court. No rigging, no ceiling mounts.",
   },
   {
     n: "02",
-    title: "Detect",
-    body: "PLACEHOLDER — what the model looks for and how fast it decides.",
+    title: "Watch",
+    body: "DRAFT — they track the ball from the low, side-on angle players actually see the line from.",
   },
   {
     n: "03",
-    title: "Alert",
-    body: "PLACEHOLDER — what happens the instant something is off.",
+    title: "Call",
+    body: "DRAFT — the moment the ball lands, LineGuard calls it: IN or OUT, with the margin. No replay to squint at.",
   },
 ];
 
 /**
  * How it works. The visual pins via CSS `sticky` while the ordered steps scroll
  * past it — scroll storytelling without a fragile JS pin. Each step fades in on
- * entry (Framer Motion), and the header uses the GSAP reveal.
+ * entry (Framer Motion); the header uses the GSAP reveal.
  */
 export function HowItWorks() {
   return (
@@ -35,8 +35,8 @@ export function HowItWorks() {
     >
       <ScrollReveal className="page-shell">
         <SectionHeader
-          eyebrow="How it works · PLACEHOLDER"
-          title="Three steps, running continuously."
+          eyebrow="How it works"
+          title="Three steps, running every rally."
         />
       </ScrollReveal>
 
@@ -45,7 +45,7 @@ export function HowItWorks() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <MediaPlaceholder
             scan
-            label="PLACEHOLDER — pipeline visual"
+            label="PLACEHOLDER — corner-camera pipeline visual"
             className="aspect-[4/3] rounded-xl border border-hairline"
           />
         </div>
