@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ACTIVE_THEME } from "@/lib/theme";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { InstrumentFrame } from "@/components/layout/InstrumentFrame";
 import { Nav } from "@/components/layout/Nav";
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme={ACTIVE_THEME}
       className={`${display.variable} ${sans.variable} ${mono.variable}`}
     >
       <body className="min-h-dvh bg-bg text-fg antialiased">

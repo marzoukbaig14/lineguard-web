@@ -26,6 +26,11 @@
   --hairline: rgba(234, 241, 246, 0.08);
   --hairline-strong: rgba(234, 241, 246, 0.16);
 
+  /* Type families (themeable — a theme may reassign these) */
+  --display-family: var(--font-space-grotesk), system-ui, sans-serif;
+  --body-family: var(--font-inter), system-ui, sans-serif;
+  --mono-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+
   /* Fluid type scale */
   --step--1: clamp(0.8rem, 0.76rem + 0.18vw, 0.9rem);
   --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
@@ -44,12 +49,37 @@
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+/* ============================================================================
+   Theme: "Clubhouse" — warm cream + slate, Apple-clean typography.
+   Same structure as Night Court; only the tokens change. Selected by setting
+   data-theme="clubhouse" on <html>. Deep, contrast-safe green keeps the IN
+   verdict legible on a light canvas.
+   ============================================================================ */
+:root[data-theme="clubhouse"] {
+  --bg: #f4f0e7;
+  --bg-elev: #ebe6da;
+  --bg-elev-2: #e1dbcb;
+  --fg: #17242e;
+  --fg-muted: #59636d;
+  --fg-faint: #6f7882;
+
+  --accent: #2f7d31; /* deep court green — legible as text on cream */
+  --accent-ink: #ffffff; /* text that sits on the accent */
+  --out: #c23b22;
+
+  --hairline: rgba(23, 36, 46, 0.12);
+  --hairline-strong: rgba(23, 36, 46, 0.22);
+
+  /* Apple-clean type: Inter carries display too, no idiosyncratic grotesk */
+  --display-family: var(--font-inter), system-ui, sans-serif;
+}
+
 /* ---- Tailwind theme bindings ------------------------------------------------
    Expose the tokens above as Tailwind utilities (bg-bg, text-fg-muted,
    text-accent, font-display, text-step-4, …). Tailwind v4 is CSS-first, so this
    replaces a tailwind.config.js theme block.
    -------------------------------------------------------------------------- */
-@theme inline {
+@theme {
   --color-bg: var(--bg);
   --color-bg-elev: var(--bg-elev);
   --color-bg-elev-2: var(--bg-elev-2);
@@ -62,9 +92,9 @@
   --color-hairline: var(--hairline);
   --color-hairline-strong: var(--hairline-strong);
 
-  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-display: var(--display-family);
+  --font-sans: var(--body-family);
+  --font-mono: var(--mono-family);
 
   --text-step--1: var(--step--1);
   --text-step-0: var(--step-0);
