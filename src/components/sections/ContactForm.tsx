@@ -51,6 +51,9 @@ function ContactFormLive({ formId }: { formId: string }) {
         className="hidden"
       />
 
+      {/* Subject line for the inbound email. */}
+      <input type="hidden" name="_subject" value="New LineGuard enquiry" />
+
       <Field label="Name" htmlFor="name">
         <input
           id="name"

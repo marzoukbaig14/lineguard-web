@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
-import { NAV_LINKS, PRIMARY_CTA, NAV_CTA_LABEL, WORDMARK } from "@/lib/site";
+import { NAV_LINKS, PRIMARY_CTA, WORDMARK } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 import { clsx } from "@/lib/clsx";
 
@@ -51,7 +51,7 @@ export function Nav() {
         </ul>
 
         <Button href={PRIMARY_CTA.href} className="px-5 py-2.5">
-          {NAV_CTA_LABEL}
+          {PRIMARY_CTA.label}
         </Button>
       </nav>
     </header>

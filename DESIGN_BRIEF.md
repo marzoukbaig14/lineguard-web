@@ -26,9 +26,10 @@ clearly-marked placeholders. This file is meant to evolve.
   - Simple "settle it" experience — no analytics suite to learn
 - **Tone:** confident · human · precise. Approachable, not cold stadium tech — it
   speaks to players yelling across a court, but it's still a measurement device.
-- **Primary call to action:** "Request early access" (primary) with a quieter
-  "Get in touch" (secondary). Pre-launch, courting both clubs and investors.
-  Revisit to "Book a demo" as the product matures.
+- **Primary call to action:** "Get LineGuard" — routed to a contact /
+  purchase-enquiry form. LineGuard is a **physical product you buy** (camera
+  hardware for a court), **not** a subscription or an "early access" waitlist.
+  No pricing tiers, no signup framing.
 
 ## 2. Aesthetic north star
 

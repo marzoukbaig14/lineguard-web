@@ -12,9 +12,9 @@ export function Contact() {
       <div className="page-shell grid gap-14 lg:grid-cols-2 lg:gap-24">
         <ScrollReveal>
           <SectionHeader
-            eyebrow="Request early access"
-            title="Settle every call on your court."
-            lede="DRAFT — tell us about your court or club and we'll be in touch about early access. Investors and partners welcome too."
+            eyebrow="Get LineGuard"
+            title="Put LineGuard on your court."
+            lede="DRAFT — tell us about your court or club and we'll get you set up with the hardware. Questions welcome too."
           />
         </ScrollReveal>
 
