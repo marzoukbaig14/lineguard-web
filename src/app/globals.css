@@ -1,27 +1,30 @@
 @import "tailwindcss";
 
 /* ============================================================================
-   LineGuard — design tokens
-   Cool near-black canvas, one warm signal-amber accent. The palette, type
-   scale, and spacing rhythm all live here as CSS variables and are surfaced to
-   Tailwind via the @theme block below.
+   LineGuard — design tokens · "Night Court"
+   A floodlit-court blue-black canvas with a single padel-ball-green accent.
+   The palette, type scale, and spacing rhythm all live here as CSS variables
+   and are surfaced to Tailwind via the @theme block below.
    ============================================================================ */
 :root {
-  /* Surfaces & ink */
-  --bg: #0a0b0d;
-  --bg-elev: #131418;
-  --bg-elev-2: #1b1d22;
-  --fg: #f2f3f5;
-  --fg-muted: #8a8f98;
-  --fg-faint: #5a5f68;
+  /* Surfaces & ink — deep court-blue at night under the lights */
+  --bg: #0a141e;
+  --bg-elev: #13212e;
+  --bg-elev-2: #1b2e3e;
+  --fg: #eaf1f6;
+  --fg-muted: #7e8b98;
+  --fg-faint: #566370;
 
-  /* The one accent: signal amber — the inspection-lamp color of a line under watch */
-  --accent: #f5a524;
-  --accent-ink: #0a0b0d; /* text that sits on the accent */
+  /* The one accent: padel-ball green — reserved for the verdict + primary CTA */
+  --accent: #c6f24e;
+  --accent-ink: #0a141e; /* text that sits on the accent */
 
-  /* Hairlines & instrument chrome */
-  --hairline: rgba(242, 243, 245, 0.08);
-  --hairline-strong: rgba(242, 243, 245, 0.16);
+  /* The verdict's other half: reserved strictly for the OUT state */
+  --out: #ff6a4d;
+
+  /* Hairlines & court-line chrome */
+  --hairline: rgba(234, 241, 246, 0.08);
+  --hairline-strong: rgba(234, 241, 246, 0.16);
 
   /* Fluid type scale */
   --step--1: clamp(0.8rem, 0.76rem + 0.18vw, 0.9rem);
@@ -55,6 +58,7 @@
   --color-fg-faint: var(--fg-faint);
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
+  --color-out: var(--out);
   --color-hairline: var(--hairline);
   --color-hairline-strong: var(--hairline-strong);
 
@@ -70,7 +74,7 @@
   --text-step-4: var(--step-4);
   --text-step-5: var(--step-5);
 
-  /* Signature: the scan line — a luminous amber sweep, the line that guards. */
+  /* A slow vision sweep over media — the system reading the court. */
   --animate-scan: scan 7s var(--ease-out) infinite;
 }
 

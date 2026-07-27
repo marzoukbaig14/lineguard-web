@@ -33,7 +33,7 @@ export function HeroBackground() {
   return (
     <MediaPlaceholder
       className="absolute inset-0"
-      label="PLACEHOLDER — hero video (muted · looped)"
+      label="PLACEHOLDER — corner-POV hero video (muted · looped)"
       scan
     />
   );

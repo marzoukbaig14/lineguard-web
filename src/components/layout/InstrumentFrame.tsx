@@ -22,10 +22,10 @@ export function InstrumentFrame() {
         <div className="absolute bottom-0 left-8 flex items-center gap-3 font-mono text-[0.65rem] uppercase tracking-[0.24em] text-fg-faint">
           <span className="inline-flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            LG&nbsp;VISION
+            LINEGUARD
           </span>
-          <span className="hidden lg:inline">CAM&nbsp;01</span>
-          <span className="hidden lg:inline">60&nbsp;FPS</span>
+          <span className="hidden lg:inline">CORNER&nbsp;CAM</span>
+          <span className="hidden lg:inline">LIVE</span>
         </div>
       </div>
     </div>

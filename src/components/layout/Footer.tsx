@@ -13,8 +13,9 @@ export function Footer() {
             {WORDMARK}
           </p>
           <p className="mt-4 max-w-xs text-step--1 text-fg-muted">
-            {/* PLACEHOLDER — one-line company/product descriptor. */}
-            PLACEHOLDER — computer vision that keeps every line under guard.
+            {/* DRAFT — one-line product descriptor. */}
+            Automatic IN/OUT line-calling for padel — from the corner, in real
+            time.
           </p>
         </div>
 

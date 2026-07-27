@@ -23,21 +23,21 @@ export function MediaPlaceholder({
         className,
       )}
     >
-      {/* Lit base */}
-      <div className="absolute inset-0 bg-[radial-gradient(120%_100%_at_50%_-10%,rgba(245,165,36,0.12),transparent_55%),radial-gradient(80%_60%_at_50%_120%,rgba(242,243,245,0.05),transparent)]" />
+      {/* Floodlit base */}
+      <div className="absolute inset-0 bg-[radial-gradient(120%_100%_at_50%_-10%,rgba(198,242,78,0.10),transparent_55%),radial-gradient(80%_60%_at_50%_120%,rgba(234,241,246,0.05),transparent)]" />
 
-      {/* Measurement grid, faded at the edges */}
+      {/* Court-line grid, faded at the edges */}
       <div className="absolute inset-0 bg-grid [mask-image:radial-gradient(80%_80%_at_50%_45%,black,transparent)]" />
 
-      {/* Scan line — the signature, on media that opts in */}
+      {/* Vision sweep — the system reading the court, on media that opts in */}
       {scan && (
         <div
           aria-hidden
           className="absolute inset-x-0 top-0 h-24 motion-safe:animate-scan"
           style={{
             background:
-              "linear-gradient(to bottom, transparent, rgba(245,165,36,0.75) 82%, rgba(245,165,36,0.95))",
-            boxShadow: "0 0 24px 2px rgba(245,165,36,0.35)",
+              "linear-gradient(to bottom, transparent, rgba(198,242,78,0.7) 82%, rgba(198,242,78,0.95))",
+            boxShadow: "0 0 24px 2px rgba(198,242,78,0.3)",
           }}
         />
       )}

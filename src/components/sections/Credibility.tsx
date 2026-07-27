@@ -1,11 +1,12 @@
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
-// PLACEHOLDER proof points — swap for real numbers or remove the section.
+// PLACEHOLDER proof points — real numbers are the human's to supply, or drop
+// the section pre-launch.
 const stats = [
-  { value: "PLACEHOLDER", label: "Frames inspected" },
-  { value: "PLACEHOLDER", label: "Detection latency" },
-  { value: "PLACEHOLDER", label: "Lines protected" },
-  { value: "PLACEHOLDER", label: "Uptime" },
+  { value: "PLACEHOLDER", label: "Calls made" },
+  { value: "PLACEHOLDER", label: "Call latency" },
+  { value: "PLACEHOLDER", label: "Courts live" },
+  { value: "PLACEHOLDER", label: "Clubs onboard" },
 ];
 
 /** Credibility (optional per brief) — stats now; logos/quotes can follow. */
@@ -14,8 +15,8 @@ export function Credibility() {
     <section className="border-t border-hairline py-[var(--section-y)]">
       <ScrollReveal className="page-shell">
         <p data-reveal className="font-mono text-step--1 uppercase tracking-[0.28em] text-fg-faint">
-          {/* PLACEHOLDER — trust line */}
-          Trusted on the floor · PLACEHOLDER
+          {/* DRAFT — trust line; numbers below stay PLACEHOLDER pre-launch */}
+          On courts, not in stadiums
         </p>
         <dl className="mt-10 grid grid-cols-2 gap-y-10 lg:grid-cols-4">
           {stats.map((stat) => (

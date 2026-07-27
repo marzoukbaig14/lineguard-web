@@ -5,19 +5,29 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
-// PLACEHOLDER capabilities. `wide` spans two columns to build a bento rhythm.
+// DRAFT capabilities from DESIGN_BRIEF §1. `wide` spans two columns for a bento
+// rhythm. Copy is accurate to the product; final voice is the human's.
 const features = [
   {
-    title: "Real-time detection",
-    body: "PLACEHOLDER — sub-second flagging as frames arrive.",
+    title: "Instant IN/OUT",
+    body: "The call lands the moment the ball does — no replay, no waiting.",
     wide: true,
   },
-  { title: "Runs at the edge", body: "PLACEHOLDER — on-prem, no cloud round-trip." },
-  { title: "Any camera", body: "PLACEHOLDER — works with existing hardware." },
-  { title: "Audit trail", body: "PLACEHOLDER — every event, timestamped and reviewable." },
   {
-    title: "Tunable tolerances",
-    body: "PLACEHOLDER — set what counts as a fault per line.",
+    title: "Corner bounce detection",
+    body: "Reads where the ball lands from a low, side-on view.",
+  },
+  {
+    title: "Fits any club court",
+    body: "Works on standard courts — nothing to build or bolt in.",
+  },
+  {
+    title: "Priced for real courts",
+    body: "An everyday buzzer, not a six-figure install.",
+  },
+  {
+    title: "Just settle it",
+    body: "One clear job. No analytics suite to learn, no dashboard to babysit.",
     wide: true,
   },
 ];
@@ -30,9 +40,9 @@ export function Features() {
     >
       <ScrollReveal className="page-shell">
         <SectionHeader
-          eyebrow="Features · PLACEHOLDER"
-          title="Built to sit on the floor, not in a lab."
-          lede="PLACEHOLDER — a sentence framing the capability set below."
+          eyebrow="Features"
+          title="Everything it takes to end the argument. Nothing it doesn't."
+          lede="DRAFT — a line framing the capability set below."
         />
       </ScrollReveal>
 

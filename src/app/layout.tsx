@@ -30,10 +30,10 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  // PLACEHOLDER — real title/description owned by the LineGuard team.
-  title: "LineGuard — PLACEHOLDER tagline",
+  // DRAFT — final title/description owned by the LineGuard team.
+  title: "LineGuard — automatic IN/OUT line-calling for padel",
   description:
-    "PLACEHOLDER — marketing description for LineGuard, a computer-vision product.",
+    "LineGuard settles the “was it in?” argument on any padel court. Two corner cameras call the ball IN or OUT in real time — no overhead rig, no six-figure install.",
 };
 
 export default function RootLayout({

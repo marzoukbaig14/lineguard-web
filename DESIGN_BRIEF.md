@@ -4,17 +4,31 @@ The spec the site is built to. Sections marked **[HUMAN]** are creative directio
 the human fills in; until then the agent builds against this structure with
 clearly-marked placeholders. This file is meant to evolve.
 
-## 1. Product context [HUMAN]
+## 1. Product context
 
-- **What LineGuard is:** _(one-liner + 2–3 sentences — a computer-vision product
-  for …)_
-- **Who it's for:** _(target user / buyer)_
-- **Core promise / differentiator:** _(why it's worth caring about)_
-- **Key features / capabilities (3–6):** _(bullets)_
-- **Tone:** _(pick ~3 adjectives, e.g. precise · confident · cutting-edge ·
-  trustworthy)_
-- **Primary call to action:** _(e.g. "Request early access" · "Book a demo" ·
-  "Get in touch")_
+- **What LineGuard is:** A computer-vision system that makes instant, automatic
+  IN/OUT line calls on a padel court — settling the "was it in?" argument every
+  club match runs into. Two small cameras mounted low and side-on in the back
+  corner watch where the ball bounces and call it in real time.
+- **Who it's for:** Casual and club padel players, and the clubs that host them.
+  The everyday argument-settler for regular players — deliberately **not** a
+  stadium/broadcast system for pro tournaments.
+- **Core promise / differentiator:** Ends the argument, instantly and affordably.
+  Two wedges: (1) priced for real club courts, not a six-figure Hawk-Eye rig;
+  (2) it watches from the **corner** — low, side-on, the same angle players
+  actually see the line from — while every other system shoots from overhead.
+  That angle is both the product and the moat.
+- **Key features / capabilities:**
+  - Instant IN/OUT call the moment the ball lands
+  - Ball-bounce detection from a low, side-on corner view
+  - Works on standard club courts — no stadium install
+  - Accessible price point
+  - Simple "settle it" experience — no analytics suite to learn
+- **Tone:** confident · human · precise. Approachable, not cold stadium tech — it
+  speaks to players yelling across a court, but it's still a measurement device.
+- **Primary call to action:** "Request early access" (primary) with a quieter
+  "Get in touch" (secondary). Pre-launch, courting both clubs and investors.
+  Revisit to "Book a demo" as the product matures.
 
 ## 2. Aesthetic north star
 
