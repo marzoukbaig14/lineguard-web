@@ -8,5 +8,7 @@ export type Theme = "night" | "clubhouse";
  * set to "clubhouse" so its Vercel preview renders the cream + Apple variant,
  * while `dev`/`main` stay on Night Court. Both themes share one structure.
  */
+// NOTE: this branch (theme/cream-apple) ships the "clubhouse" default so its
+// Vercel preview renders the cream + Apple variant. dev/main keep "night".
 export const ACTIVE_THEME: Theme =
-  (process.env.NEXT_PUBLIC_THEME as Theme) || "night";
+  (process.env.NEXT_PUBLIC_THEME as Theme) || "clubhouse";
