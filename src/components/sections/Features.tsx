@@ -1,7 +1,5 @@
-"use client";
-
-import { motion, useReducedMotion } from "framer-motion";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { TiltCard } from "@/components/motion/TiltCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
@@ -53,31 +51,20 @@ export function Features() {
             delay={i * 0.05}
             className={feature.wide ? "sm:col-span-2 lg:col-span-1" : undefined}
           >
-            <FeatureCard title={feature.title} body={feature.body} />
+            <TiltCard className="h-full">
+              <article className="group relative h-full overflow-hidden rounded-xl border border-hairline bg-bg-elev p-7 transition-colors hover:border-hairline-strong">
+                {/* accent edge that lights on hover */}
+                <span
+                  aria-hidden
+                  className="absolute inset-x-0 top-0 h-px scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100"
+                />
+                <h3 className="text-step-1">{feature.title}</h3>
+                <p className="mt-3 text-step-0 text-fg-muted">{feature.body}</p>
+              </article>
+            </TiltCard>
           </FadeIn>
         ))}
       </div>
     </section>
-  );
-}
-
-/** Bento card with a restrained hover lift + accent hairline (reduced-motion safe). */
-function FeatureCard({ title, body }: { title: string; body: string }) {
-  const reduced = useReducedMotion();
-
-  return (
-    <motion.article
-      whileHover={reduced ? undefined : { y: -4 }}
-      transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative h-full overflow-hidden rounded-xl border border-hairline bg-bg-elev p-7 transition-colors hover:border-hairline-strong"
-    >
-      {/* accent edge that lights on hover */}
-      <span
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-px scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100"
-      />
-      <h3 className="text-step-1">{title}</h3>
-      <p className="mt-3 text-step-0 text-fg-muted">{body}</p>
-    </motion.article>
   );
 }

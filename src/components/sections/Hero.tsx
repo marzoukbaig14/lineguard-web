@@ -136,19 +136,20 @@ export function Hero() {
           </h1>
 
           {/* Two captions occupy the same slot; they cross-fade on scroll. */}
-          <div className="relative mt-6 h-16 max-w-xl sm:h-12">
+          <div className="relative mt-6 h-24 max-w-xl sm:h-16">
             <p
               ref={cap1}
               className="absolute inset-0 font-mono text-step-0 text-fg-muted opacity-0"
             >
-              Every other line-caller watches from above.
+              Every other line-caller watches from up here. Stadium rigs,
+              stadium prices.
             </p>
             <p
               ref={cap2}
               className="absolute inset-0 font-mono text-step-0 text-fg"
             >
-              LineGuard calls it from the corner — the angle you see the line
-              from.
+              LineGuard watches from the corner — low, side-on, the angle you
+              actually see the line from.
             </p>
           </div>
 

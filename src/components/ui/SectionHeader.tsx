@@ -1,7 +1,12 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { AnimatedTitle } from "@/components/motion/AnimatedTitle";
 import { clsx } from "@/lib/clsx";
 
-/** Shared section heading block: mono eyebrow + display title + optional lede. */
+/**
+ * Shared section heading block: mono eyebrow + animated display title +
+ * optional lede. The title assembles word-by-word on scroll (AnimatedTitle);
+ * eyebrow and lede keep the data-reveal hook for ScrollReveal wrappers.
+ */
 export function SectionHeader({
   eyebrow,
   title,
@@ -9,7 +14,7 @@ export function SectionHeader({
   className,
 }: {
   eyebrow: string;
-  title: React.ReactNode;
+  title: string;
   lede?: React.ReactNode;
   className?: string;
 }) {
@@ -18,9 +23,9 @@ export function SectionHeader({
       <div data-reveal>
         <Eyebrow>{eyebrow}</Eyebrow>
       </div>
-      <h2 data-reveal className="mt-5 text-step-3 text-balance">
+      <AnimatedTitle className="mt-5 text-step-3 text-balance">
         {title}
-      </h2>
+      </AnimatedTitle>
       {lede && (
         <p data-reveal className="mt-5 max-w-2xl text-step-1 text-fg-muted">
           {lede}

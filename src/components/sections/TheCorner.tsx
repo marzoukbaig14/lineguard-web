@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/motion/FadeIn";
+import { MaskReveal } from "@/components/motion/MaskReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { MediaPlaceholder } from "@/components/ui/MediaPlaceholder";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
@@ -44,13 +45,13 @@ export function TheCorner() {
       </ScrollReveal>
 
       <div className="page-shell mt-16 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16">
-        <FadeIn>
+        <MaskReveal>
           <MediaPlaceholder
             scan
             label="PLACEHOLDER — corner vs overhead angle"
             className="aspect-square rounded-2xl border border-hairline"
           />
-        </FadeIn>
+        </MaskReveal>
 
         <FadeIn delay={0.08}>
           <ul className="flex flex-col divide-y divide-hairline">

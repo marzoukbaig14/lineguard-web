@@ -19,12 +19,8 @@ export function Argument() {
       <ScrollReveal className="page-shell">
         <SectionHeader
           eyebrow="The argument"
-          title={
-            <>
-              A ball on the line is faster than any eye in the corner.
-            </>
-          }
-          lede="DRAFT — at full speed a bounce is gone in an instant, and four players see it four ways. So the call goes to whoever's most certain, or most stubborn. Every regular match has the same fight."
+          title="Four players. One bounce. Four different calls."
+          lede="DRAFT — at full speed the bounce is gone in an instant, and everyone saw it from somewhere else. So the point goes to whoever argues loudest. Every club match has this fight."
         />
 
         <dl className="mt-16 grid gap-px overflow-hidden rounded-lg border border-hairline bg-hairline sm:grid-cols-3">
