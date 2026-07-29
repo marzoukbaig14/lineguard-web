@@ -11,21 +11,23 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 // A real, ordered pipeline — the numbered markers encode true sequence.
+// Copy respects the fact embargo: camera count only (no placement claim),
+// "quick court-side install" (no minutes figure), no price.
 const steps = [
   {
     n: "01",
     title: "Mount",
-    body: "DRAFT — two small cameras clip low into the back corner of a standard court. No rigging, no ceiling mounts.",
+    body: "Two cameras and one small box, installed court-side. No rigging, no ceiling mounts, no wiring into the court.",
   },
   {
     n: "02",
     title: "Watch",
-    body: "DRAFT — they track the ball from the low, side-on angle players actually see the line from.",
+    body: "They read every bounce low and side-on — the angle the line is actually seen from — entirely on the court. Nothing streams out.",
   },
   {
     n: "03",
     title: "Call",
-    body: "DRAFT — the moment the ball lands, LineGuard calls it: IN or OUT, with the margin. No replay to squint at.",
+    body: "A close one lands and the court decides: IN or OUT, under a second, impartial. Pick the signal — light, buzzer, or make it yours.",
   },
 ];
 

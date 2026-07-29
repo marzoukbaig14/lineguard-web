@@ -13,9 +13,8 @@ export function Footer() {
             {WORDMARK}
           </p>
           <p className="mt-4 max-w-xs text-step--1 text-fg-muted">
-            {/* DRAFT — one-line product descriptor. */}
-            Automatic IN/OUT line-calling for padel — from the corner, in real
-            time.
+            Instant, impartial line-calls for club padel. The call, for the
+            rest of us.
           </p>
         </div>
 

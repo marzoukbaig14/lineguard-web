@@ -67,7 +67,7 @@ export function Showcase() {
         <SectionHeader
           eyebrow="See it call"
           title="Watch a close one get settled."
-          lede="DRAFT — a real rally, the ball at the line, and the call landing in real time from the corner view."
+          lede="The moment of certainty: a close ball lands, the court decides, and the game moves on. Footage of the real thing will live here."
         />
       </ScrollReveal>
 

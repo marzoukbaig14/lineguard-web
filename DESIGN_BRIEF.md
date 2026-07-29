@@ -30,6 +30,30 @@ clearly-marked placeholders. This file is meant to evolve.
   purchase-enquiry form. LineGuard is a **physical product you buy** (camera
   hardware for a court), **not** a subscription or an "early access" waitlist.
   No pricing tiers, no signup framing.
+- **Buyer:** clubs and court owners (the wallet); players are the emotional
+  hook. Narrate the pain as the player's corner argument, convert the owner
+  ("put it on your courts"). A player-facing app is a future SKU, not this CTA.
+- **Positioning anchor:** NOT Hawk-Eye. The impartial call for the casual club —
+  pro-grade fairness without the pro-grade price. "The call, for the rest of us."
+- **The site's real job:** a portfolio / investor-facing showcase. It reads as a
+  product marketing site — and that polished reading *is* the demonstration that
+  the team is complete and in control. Optimize for a VC grasping the idea fast.
+- **Verdict depiction rule:** never show a specific signal device — light,
+  buzzer, or custom is the customer's choice. Render the *moment of certainty*
+  (geometry snapping to IN/OUT), not hardware.
+- **Working facts (usable):** 35M+ players · 77,300 courts · ~15%/yr growth ·
+  the sport is overwhelmingly self-officiated · the back-corner glass-or-floor
+  call is the sport's one recognized dispute · our ~15-club owner survey points
+  at the back-wall corner · hardware = two cameras + one small on-court edge
+  box, no cloud, no stored player footage, verdict in under a second.
+- **Fact embargo (do NOT publish until confirmed):** camera *placement* ("one
+  corner" vs "one per end" — say "two cameras" only); install *time* (say
+  "quick court-side install", no minutes figure); *price* (no figure —
+  "club-friendly" direction only).
+- **Media direction:** until real footage is funded, signature visuals are
+  animated **vector/SVG court scenes** (on-palette, scroll-driven) — the idea is
+  simple, so clean drawings tell it better than grainy stock. Real videography
+  comes after the concept is locked.
 
 ## 2. Aesthetic north star
 

@@ -31,10 +31,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  // DRAFT — final title/description owned by the LineGuard team.
   title: "LineGuard — automatic IN/OUT line-calling for padel",
   description:
-    "LineGuard settles the “was it in?” argument on any padel court. Two corner cameras call the ball IN or OUT in real time — no overhead rig, no six-figure install.",
+    "LineGuard settles the “was it in?” argument on any padel court. Two cameras and one small box call the bounce IN or OUT in under a second — impartial, entirely on-court, priced for club courts.",
 };
 
 export default function RootLayout({
